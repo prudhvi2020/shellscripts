@@ -10,18 +10,24 @@ echo -e "\e[32m D - DELETE THE CONTENT\e[0m"
 echo -e "\e[32m-------------------------------\e[0m"
 echo -e "\e[35m E - REMOVE THE FILE\e[0m"
 echo -e "\e[32m-------------------------------\e[0m"
-read -p "chose your option A|B|C|D|E:" option
+echo -e "\e[36m F - CREATE A NEW FILE\e[0m"
+echo -e "\e[32m-------------------------------\e[0m"
+read -p "chose your option A|B|C|D|E|F:" option
 echo -e "\e[32m-------------------------------\e[0m"
 read -p "Enter the file name u want to Perform the operation:" fname
 
 case $option in
-  A )  
-     if [ ! -s $fname ] ; then
+  A )
+     if [ -e $fname ] ; then	  
+      if [ ! -s $fname ] ; then
 	 echo "it is an empty file"
-     else
+      else
 	echo "the content of the file is "
 	echo "--------------------------"
 	cat $fname
+      fi
+     else
+	echo -e "\e[33mopps! file doesnot exists\e[0m" 
      fi
      ;;
   B )
@@ -43,6 +49,9 @@ case $option in
       read -p "Enter the file which u want to delete:" fname
       rm -r $fname
       echo "$fname file is deleted successfully"
+      ;;
+  F ) touch $fname
+      echo "$fname created successfully"
       ;;
        
    * )
