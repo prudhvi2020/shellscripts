@@ -22,18 +22,24 @@ do
    B )
         echo "you have selected CHICKEN-DUM-BIRYANI"
         read -p "Enter no of plates you required:" quantity
-        amount=$[amount+quantity*200]
+        c1=$[amount+quantity*200]
+	d1=$[c1*18/100]
+	amount=$[d1+c1]
 	   ;;
    C )
        echo "you have selected VEG-BIRYANI"
        read -p "Enter no of plates you required:" quantity
-       amount=$[amount+quantity*140]
+       c1=$[amount+quantity*140]
+       d1=$[c1*18/100]
+       amount=$[d1+c1]
        ;;
          	   
    D )
-       echo "you have selected VEG-BIRYANI"
+       echo "you have selected EGG-BIRYANI"
        read -p "Enter no of plates you required:" quantity
-       amount=$[amount+quantity*175]
+       c1=$[amount+quantity*175]
+       d1=$[c1*18/100]
+       amount=$[d1+c1]
        ;;
    * )
 	   echo "Plz select valid option"
