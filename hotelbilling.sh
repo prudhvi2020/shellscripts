@@ -50,7 +50,7 @@ do
 	  continue 
 	  ;;
 
-          [Nn]|[nN][oO][Oo] )
+          [Nn]|[Nn][Oo])
 	  break
 	  ;;
   esac
