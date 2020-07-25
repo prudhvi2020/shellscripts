@@ -55,5 +55,5 @@ do
 	  ;;
   esac
 done
- echo "Your Total amount is:$amount"
+ echo "Your Total amount is:$amount (including gst)"
  echo "Thanks for visiting my hotel"
