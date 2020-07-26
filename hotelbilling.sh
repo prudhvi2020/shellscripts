@@ -1,5 +1,5 @@
 #! /bin/bash
-echo "Welcome To My hotel "
+echo "Welcome To My hotel Have A Great Lunch! "
 echo
 amount=0
 while [ true ]
