@@ -15,31 +15,23 @@ do
    A )
 	echo "you have selected HICKEN-FRY-PIECE BIRYANI"
 	read -p "Enter no of plates you required:" quantity
-	c1=$[amount+quantity*230]
-	d1=$[c1*18/100]
-	amount=$[d1+c1]
+	amount=$[amount+quantity*230]
 	;;
    B )
         echo "you have selected CHICKEN-DUM-BIRYANI"
         read -p "Enter no of plates you required:" quantity
-        c1=$[amount+quantity*200]
-	d1=$[c1*18/100]
-	amount=$[d1+c1]
+        amount=$[amount+quantity*200]
 	   ;;
    C )
        echo "you have selected VEG-BIRYANI"
        read -p "Enter no of plates you required:" quantity
-       c1=$[amount+quantity*140]
-       d1=$[c1*18/100]
-       amount=$[d1+c1]
+       amount=$[amount+quantity*140]
        ;;
          	   
    D )
        echo "you have selected EGG-BIRYANI"
        read -p "Enter no of plates you required:" quantity
-       c1=$[amount+quantity*175]
-       d1=$[c1*18/100]
-       amount=$[d1+c1]
+       amount=$[amount+quantity*175]
        ;;
    * )
 	   echo "Plz select valid option"
@@ -55,5 +47,5 @@ do
 	  ;;
   esac
 done
- echo "Your Total amount is:$amount (including gst)"
+ echo "Your Total amount is:$amount "
  echo "Thanks for visiting my hotel"
