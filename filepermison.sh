@@ -5,7 +5,7 @@ files=($(ls *))
 for fname in ${files[@]}
 do
  echo -ne "$fname: \t"
- if [ -r$fname ];then
+ if [ -r $fname ];then
    echo -ne "read(Y) \t"
  else
  echo -ne "read(N) \t"
